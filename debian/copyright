@@ -1,0 +1,17 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: *
+Copyright:
+  2023  Jonas Smedegaard <dr@jones.dk>
+License-Grant:
+ This packaging is free software:
+ you can redistribute it and/or modify it
+ under the terms of the GNU General Public License
+ as published by the Free Software Foundation,
+ either version 3,
+ or (at your option) any later version.
+License: GPL-3+
+Reference: debian/copyright
+
+License: GPL-3+
+Reference: /usr/share/common-licenses/GPL-3

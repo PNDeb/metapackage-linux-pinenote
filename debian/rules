@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+# resolve DEB_VERSION
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@
+
+# resolve control file variables from package version
+# * this assumes kernel package versioned VERSION-gHASH-DEBVERSION,
+#   and this package versioned same except delimited with "~"
+override_dh_gencontrol:
+	echo $(DEB_VERSION)
+	perl -e '$$ARGV[0] =~ /^[\d.]+/; print $$&' $(DEB_VERSION)
+	$(eval version = $(shell perl -e '$$ARGV[0] =~ /^[\d.]+/; print $$&' $(DEB_VERSION)))
+	$(eval date = $(shell perl -e '$$ARGV[0] =~ /^[\d.]+~\K\d+/; print $$&' $(DEB_VERSION)))
+	$(eval hash = $(shell perl -e '$$ARGV[0] =~ /^[\d.]+~\d+~\Kg[\da-f]+/; print $$&' $(DEB_VERSION)))
+	$(eval debversion = $(shell perl -e '$$ARGV[0] =~ /^[\d.]+~\d+~g[\da-f]+~\K.*/; print $$&' $(DEB_VERSION)))
+	dh_gencontrol -- \
+	 -V'kernel:PkgNameSuffix=$(version)-pinenote-$(date)-$(hash)' \
+	 -V'kernel:PkgVersion=$(version)-$(hash)-$(debversion)'
