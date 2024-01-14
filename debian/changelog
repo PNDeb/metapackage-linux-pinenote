@@ -1,3 +1,9 @@
+linux-pinenote (1.1) UNOFFICIAL; urgency=medium
+
+  * increase testing kernel to linux-[image|headers]-6.6.11-pinenote-202401121844-g2c1cd096f504
+
+ -- Maximilian Weigand (PineNote Signing Key 3) <mweigand@mweigand.net>  Sun, 14 Jan 2024 18:34:06 +0100
+
 linux-pinenote (1.0) UNOFFICIAL; urgency=medium
 
   * Version for the stable packages:
