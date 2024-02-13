@@ -17,18 +17,19 @@ Architecture: all
 Provides:
  linux-image-generic,
 Depends:
- linux-image-6.3.10-pinenote-202312092104-gd4dec0cb83b9,
+ linux-image-6.6.11-pinenote-202401121844-g2c1cd096f504,
  linux-headers-pinenote-stable
 Description: Linux for the PineNote (meta-package)
  This package depends on the latest Linux kernel and modules
  for use on the PineNote.
+Conflicts: linux-image-pinenote-testing
 
 Package: linux-headers-pinenote-stable
 Architecture: all
 Provides:
  linux-headers-generic,
 Depends:
- linux-headers-6.3.10-pinenote-202312092104-gd4dec0cb83b9
+ linux-headers-6.6.11-pinenote-202401121844-g2c1cd096f504
 Description: Header files for Linux PineNote configuration (meta-package)
  This package depends on the architecture-specific header files
  for the latest Linux kernel PineNote configuration.
@@ -38,18 +39,19 @@ Architecture: all
 Provides:
  linux-image-generic,
 Depends:
- linux-image-6.6.11-pinenote-202401121844-g2c1cd096f504,
+ linux-image-6.6.11-pinenote-202402112201-g1c05f270f7b8,
  linux-headers-pinenote-testing
 Description: Linux for the PineNote (meta-package)
  This package depends on the latest Linux kernel and modules
  for use on the PineNote.
+Conflicts: linux-image-pinenote-stable
 
 Package: linux-headers-pinenote-testing
 Architecture: all
 Provides:
  linux-headers-generic,
 Depends:
- linux-headers-6.6.11-pinenote-202401121844-g2c1cd096f504
+ linux-headers-6.6.11-pinenote-202402112201-g1c05f270f7b8
 Description: Header files for Linux PineNote configuration (meta-package)
  This package depends on the architecture-specific header files
  for the latest Linux kernel PineNote configuration.
