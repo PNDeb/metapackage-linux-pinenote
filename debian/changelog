@@ -1,3 +1,9 @@
+linux-pinenote (1.4) UNOFFICIAL; urgency=medium
+
+  * move both stable and testing to v6.6.30
+
+ -- Maximilian Weigand (PineNote Signing Key 3) <mweigand@mweigand.net>  Sun, 12 May 2024 19:33:59 +0200
+
 linux-pinenote (1.3) UNOFFICIAL; urgency=medium
 
   * move stable to linux-*-6.6.11-pinenote-202401121844-g2c1cd096f504
