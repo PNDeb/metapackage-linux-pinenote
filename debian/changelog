@@ -1,3 +1,10 @@
+linux-pinenote (1.7) trixie; urgency=medium
+
+  * switch both stable and testing to v6.12.11
+    linux-image-6.12.11-pinenote-202501281646-00249-g211ba27556cc
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Tue, 28 Jan 2025 11:10:13 +0100
+
 linux-pinenote (1.6) trixie; urgency=medium
 
   * move both stable and testing to v6.12-rc2
